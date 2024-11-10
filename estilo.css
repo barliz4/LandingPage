@@ -1,0 +1,243 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --color_primario: #d3d013;
+  --color_secundario: #000000;
+  --color_blanco: #ffffff;
+  --tamanio_fuente: 15px;
+  --maximo_ancho: 1200px;
+  --alto_nav: 70px;
+}
+
+::selection {
+  background-color: var(--color_primario);
+  color: var(--color_secundario);
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-size: var(--tamanio_fuente);
+  font-family: Verdana;
+  background-color: var(--color_secundario);
+  color: var(var--color_blanco);  
+  color: #ffffff;
+}
+
+header {
+  background-color: var(--color_primario);
+  color: var(--color_secundario);
+  position: fixed;
+  /*position: sticky; Este, o el fixed sirven para dejar el menu fijo, y que no se oculte*/
+  width: 100%;
+  top: 0;
+}
+
+section {
+  height: calc(100vh - var(--alto_nav)); 
+}
+
+.contenedor {
+  width: 100%;
+  max-width: var(--maximo_ancho);
+  margin: 0 auto;
+  overflow: hidden;
+}
+
+.h-100{
+  height: calc(100vh - var(--alto_nav));
+}
+
+.nav {
+  /*height: 70px;*/
+}
+
+.nav__contenedor {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.nav__lista {
+  height: var(--alto_nav);
+  list-style: none;
+  display: flex;
+  gap: 2rem;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.logo {
+  width: 80px;
+  height: 90px;
+  /*filter: grayscale(100%);*/
+}
+
+.nav__item {
+  text-decoration: none;
+  color: var(--color_secundario);
+  font-weight: bold;
+}
+
+.nav__link {
+  text-decoration: none;
+  /*background-color:rgb(6, 179, 44);*/
+  color: var(--color_secundario);
+}
+
+.logo2 {
+  width: 400px;
+  height: 400px;
+}
+
+/**
+..........#Principal.......
+**/
+
+.principal {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.ilustracion {
+  order: 1;
+  flex-basis: 5%;
+}
+
+.contenedor-textos {
+  order: 0;
+  flex-basis: 40%;
+}
+
+.Titulo {
+  font-size: 48px;
+  font-weight: 700;
+}
+
+.parrafo {
+  margin: 20px 0;
+  font-weight: 300;
+  font-size: 24px;
+}
+
+.btn {
+  display: inline-block;
+  background-color: var(--color_primario);
+  color: var(--color_secundario);
+  text-decoration: none;
+  font-weight: 700;
+  padding: 15px 30px;
+  border-radius: 30px;
+  font-size: 13px;
+}
+
+.titulo_diseño{
+  font-size: 28px;
+  font-weight: 700;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+/**-----------------------
+..........#Nosotros.......
+-----------------------**/
+
+
+.ilustracion3 {
+  height: 400px;
+  width: 400px;
+}
+
+.contenedor-textos-2 {
+  order: 1;
+  flex-basis: 40%;
+}
+
+.titulo_diseño {
+  font-size: 48px;
+  font-weight: 700;
+}
+
+.parrafo_2 {
+  margin: 20px 0;
+  font-weight: 300;
+  font-size: 18px;
+}
+
+/**-----------------------
+..........#CARDS..........
+-----------------------**/
+
+.cards {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+}
+
+.card__item {
+  max-width: 350px;
+  width: 30%;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
+  text-align: center;
+  background-color: var(--color_blanco);
+  color:var(--color_secundario);
+  padding: 40px 0;
+  border-radius: 10px;
+  
+}
+
+.card__item--activo {
+  background-color: var(--color_primario);
+  
+}
+
+.card__plan {
+  margin-bottom: 20px;
+}
+
+.card__precio {
+  font-size: 3rem;
+}
+
+.card__caracteristica {
+  margin-bottom: 25px;
+}
+
+.btn--negro {
+  background-color: var(--color_secundario);
+  color: var(--color_blanco);
+}
+
+/**-----------------------
+..........#Servicios......
+-----------------------**/
+
+.servicios {
+  display: flex;
+  flex-direction: column;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.titulo_servicios {
+  font-size: 48px;
+  text-align: center;
+}
+
+/**-----------------------
+..........#Galeria........
+-----------------------**/
+
+.titulo_galeria {
+    font-size: 48px;
+  text-align: center;
+}
