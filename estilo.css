@@ -238,6 +238,94 @@ section {
 -----------------------**/
 
 .titulo_galeria {
-    font-size: 48px;
+    font-size: 30px;
+    text-align: center;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.logo_durazno { 
+  width: 210px;
+  height: 210px;
+  filter: drop-shadow(0 0 5px rgb(242, 255, 0));
+  
+}
+
+.parrafo_3 {
+  font-size: 18;
+  font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+/**-----------------------
+..........#Contacto.......
+-----------------------**/
+
+.registro {
+  width: 400px;
+  background-color:var(--color_primario);      /*Color relleno formulario*/
+  padding: 30px;
+  margin: auto;
+  margin-top: 50px;
+  border-radius: 4px;
+  font-size: verdana;
+  color: var(--color_secundario);       /*color de letra*/
+}
+
+.registro h4 {
+  font-size: 22px;        /*tamaño letra formluario de contacto*/
+  margin-bottom: 20px;    /*Espacio inferioir entre formulario, y campos para escribir*/
+
+}
+
+.controles {
+  width: 300px;                             /*Tamaño de largo de cada campo*/
+  background-color: rgb(255, 255, 255);  /*Color de relleno*/
+  padding: 10px;                       /*Grosor de los campos*/
+  border-radius: 4px;                 /*Redondea esquinas de los campos*/
+  margin-bottom: 16px;                /*Espacio inferior entre cada campo*/
+  border: 1px solid #000000;        /*Color de borde*/
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  font-size: 18px;                    /*Tamaño de letra interior de cada campo*/
+}
+
+.registro p {
+  height: 40px;
   text-align: center;
+  font-size: 18px;
+}
+
+.registro a {
+  color: rgba(0, 0, 0, 0.945);    /*color terminos y condiciones texto*/
+  
+}
+
+.registro a:hover{
+  color: rgba(0, 0, 0, 0.945);    /*color al pasar el cursor por terminos y condiciones*/
+  text-decoration: underline;
+}
+
+.registro .boton_formulario {
+  width: 300px;
+  background-color:var(--color_blanco);     /*Color boton*/
+  border: none;
+  padding: 12px;
+  color: rgb(0, 0, 0);                  /*color boton*/
+  margin: 16px 0px;
+  font-size: 16px;                        /*tamaño de boton enviar*/
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  border-radius: 4px;                   /*Redondea esquinas del boton*/
+  cursor: pointer;                      /*cursor al pasar el mouse por el boton*/
+  transition: background-color 0.3s ease-in-out;
+}
+
+.controles_mensaje {
+  width: 300px;                             /*Tamaño de largo de cada campo*/
+  height: 80px;                             /*alto del controlador de mensaje*/
+  background-color: rgb(255, 255, 255);  /*Color de relleno*/
+  padding: 10px;                       /*Grosor de los campos*/
+  border-radius: 4px;                 /*Redondea esquinas de los campos*/
+  margin-bottom: 16px;                /*Espacio inferior entre cada campo*/
+  border: 1px solid #000000;        /*Color de borde*/
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  font-size: 18px;                    /*Tamaño de letra interior de cada campo*/
+
 }
