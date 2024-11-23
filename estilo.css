@@ -74,7 +74,7 @@ section {
 }
 
 .logo {
-  width: 80px;
+  width: 120px;
   height: 90px;
   /*filter: grayscale(100%);*/
 }
@@ -237,15 +237,25 @@ section {
 ..........#Galeria........
 -----------------------**/
 
-.titulo_galeria {
-    font-size: 30px;
-    text-align: center;
-    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+.galeria {
+  display: flex;          /* Activa un diseño flexible */
+  flex-wrap: wrap;        /* Permite que las imágenes pasen a otra línea si es necesario */
+  justify-content: center; /* Centra horizontalmente los elementos */
+  align-items: center;    /* Centra verticalmente los elementos */
+  gap: 9px;               /*Espaciado entre las imágenes */
+  /*padding: 20px;          /* Opcional: Espaciado interno del contenedor */ 
+  /* border: 1px solid #ccc;    Borde para el contenedor */
+
 }
 
+.titulo_galeria {
+    font-size: 30px;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+} 
+
 .logo_durazno { 
-  width: 210px;
-  height: 210px;
+  width: 210px;       /*ancho de todas las imagenes (de galeria)*/
+  height: 210px;      /*alto de todas las imagenes (de galeria)*/
   filter: drop-shadow(0 0 5px rgb(242, 255, 0));
   
 }
@@ -260,7 +270,8 @@ section {
 -----------------------**/
 
 .registro {
-  width: 400px;
+  width: 370px;
+  height: 580px;
   background-color:var(--color_primario);      /*Color relleno formulario*/
   padding: 30px;
   margin: auto;
@@ -276,7 +287,8 @@ section {
 
 }
 
-.controles {
+.controles {      /*Nombre,*/
+  text-align: center;
   width: 300px;                             /*Tamaño de largo de cada campo*/
   background-color: rgb(255, 255, 255);  /*Color de relleno*/
   padding: 10px;                       /*Grosor de los campos*/
@@ -287,8 +299,8 @@ section {
   font-size: 18px;                    /*Tamaño de letra interior de cada campo*/
 }
 
-.registro p {
-  height: 40px;
+.registro p {     /*Términos y condiciones*/
+  height: 60px;
   text-align: center;
   font-size: 18px;
 }
@@ -317,7 +329,8 @@ section {
   transition: background-color 0.3s ease-in-out;
 }
 
-.controles_mensaje {
+.controles_mensaje {      /*Apartado de mensaje*/
+  text-align: center;
   width: 300px;                             /*Tamaño de largo de cada campo*/
   height: 80px;                             /*alto del controlador de mensaje*/
   background-color: rgb(255, 255, 255);  /*Color de relleno*/
