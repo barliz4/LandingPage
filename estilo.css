@@ -245,24 +245,25 @@ section {
   gap: 9px;               /*Espaciado entre las imágenes */
   /*padding: 20px;          /* Opcional: Espaciado interno del contenedor */ 
   /* border: 1px solid #ccc;    Borde para el contenedor */
-
 }
 
 .titulo_galeria {
-    font-size: 30px;
     font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    text-align: center;
+    font-size: 42px;
 } 
 
 .logo_durazno { 
   width: 210px;       /*ancho de todas las imagenes (de galeria)*/
   height: 210px;      /*alto de todas las imagenes (de galeria)*/
-  filter: drop-shadow(0 0 5px rgb(242, 255, 0));
+  /* filter: drop-shadow(0 0 5px rgb(242, 255, 0)); */
   
 }
 
 .parrafo_3 {
   font-size: 18;
   font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  text-align: left;
 }
 
 /**-----------------------
